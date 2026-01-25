@@ -1,42 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-container {
+  min-height: 500px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navigation Menu */
+.nav-menu {
+  background-color: #1A1A1A;
+  padding: 6px;
+  border-radius: 15px;
+  margin-bottom: 3em;
+  margin-top: 5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  gap: 1em;
+  list-style-type: none;
 }
 
-.card {
-  padding: 2em;
+.nav-menu ul li {
+  cursor: pointer;
+  padding: 0.6em 0.7em;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
 }
 
-.read-the-docs {
-  color: #888;
+ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul li:first-child {
+  background-color: #1E40AF;
+  box-shadow: 0 2px 4px 0 #1E40AF50;
+}
+
+/* Badges Styling */
+.badges-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  gap: 1em;
+}
+
+.badge {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: red;
+}
+
+.square {
+  border-radius: 4px;
+}
+
+.pill {
+  border-radius: 12px;
+}
+
+.gray {
+  background-color: #F3F4F6;
+  color: #1F2937;
+}
+
+.red {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.yellow {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.green {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.blue {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+.indigo {
+  background-color: #E0E7FF;
+  color: #3730A3;
+}
+
+.purple {
+  background-color: #EDE9FE;
+  color: #5B21B6;
+}
+
+.pink {
+  background-color: #FCE7F3;
+  color: #9D174D;
 }
