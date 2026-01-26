@@ -3,11 +3,14 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .main-container {
   min-height: 500px;
+  /* background-color: #1E40AF; */
+  /* width: 100%; */
+  width: 800px;
 }
 
 /* Navigation Menu */
@@ -45,9 +48,10 @@ ul li:first-child {
   box-shadow: 0 2px 4px 0 #1E40AF50;
 }
 
-/* Badges Styling */
-.badges-container {
+/* Badges Page */
+.badges-container > div {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   margin-bottom: 1em;
@@ -108,4 +112,108 @@ ul li:first-child {
 .pink {
   background-color: #FCE7F3;
   color: #9D174D;
+}
+
+/* Banners Page */
+.banners-container {
+  /* background-color: #065F46; */
+}
+
+.banners-container .banner {
+  width: 100%;
+  /* height: 80px; */
+  /* background-color: darkblue; */
+  display: flex;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.banner > div {
+  margin-left: 12px;
+}
+
+.banner svg {
+  align-self: flex-start;
+}
+
+.banner > div h2 {
+  font-size: 0.87rem;
+  font-weight: 600;
+}
+
+.banner > div p {
+  font-size: 0.8rem;
+  margin-top: 0.6em;
+  font-weight: 500;
+}
+
+/* Success */
+.success {
+  background-color: #ECFDF5;
+}
+
+.success h2 {
+  color: #065F46;
+}
+
+.success p {
+  color: #047857;
+}
+
+.success svg {
+  color: #34D399;
+}
+
+/* Warning */
+.warning {
+  background-color: #FFFBEB;
+}
+
+.warning h2 {
+  color: #92400E;
+}
+
+.warning p {
+  color: #B45309;
+}
+
+.warning svg {
+  color: #FBBF24;
+}
+
+/* Error */
+.error {
+  background-color: #FEF2F2;
+}
+
+.error h2 {
+  color: #92400E;
+}
+
+.error p {
+  color: #B45309;
+}
+
+.error svg {
+  color: #F87171;
+}
+
+/* Neutral */
+.neutral {
+  background-color: #EFF6FF;
+}
+
+.neutral h2 {
+  color: #1E40AF;
+}
+
+.neutral p {
+  color: #1C51B9;
+}
+
+.neutral svg {
+  color: #60A5FA;
 }

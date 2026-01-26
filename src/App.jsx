@@ -1,39 +1,19 @@
+import React from 'react'
 import './App.css'
-import Badge from './components/Badge'
-import Badges from './components/Badges'
+import Badges from './components/badges/Badges'
+import Banners from './components/banners/Banners'
 import Navigation from './Navigation'
 import Typewriter from './utils/Typewriter'
 
 function App() {
-  const badgeThemes = [
-    'gray',
-    'red',
-    'yellow',
-    'green',
-    'blue',
-    'indigo',
-    'purple',
-    'pink'
-  ]
-
+  const [page, setPage] = React.useState('Badges')
+  console.log(page)
   return (
     <main className='main-container'>
-      <Navigation />
-      <Typewriter />
-      <Badges>
-        {
-          badgeThemes.map(badge => {
-            return <Badge colorTheme={badge} border="pill" />
-          })
-        }
-      </Badges>
-      <Badges>
-        {
-          badgeThemes.map(badge => {
-            return <Badge colorTheme={badge} border="square" />
-          })
-        }
-      </Badges>
+      <Navigation setPage={setPage} />
+      <Typewriter value={page} />
+      {page === 'Badges' && <Badges />}
+      {page === 'Banners' && <Banners />}
     </main>
   )
 }

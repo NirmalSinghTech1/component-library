@@ -1,7 +1,7 @@
-export default function Typewriter() {
+export default function Typewriter({value}) {
     return (
         <div className="typewriter">
-            <h1>Badges</h1>
+            <h1>{value}</h1>
         </div>
     )
 }
