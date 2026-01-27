@@ -3,14 +3,16 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
+  box-sizing: border-box;
   /* text-align: center; */
 }
 
 .main-container {
-  min-height: 500px;
+  height: 80vh;
   /* background-color: #1E40AF; */
   /* width: 100%; */
   width: 800px;
+  text-align: center;
 }
 
 /* Navigation Menu */
@@ -19,7 +21,7 @@
   padding: 6px;
   border-radius: 15px;
   margin-bottom: 3em;
-  margin-top: 5em;
+  /* margin-top: 5em; */
 }
 
 .nav-menu ul {
@@ -43,7 +45,7 @@ ul li:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-ul li:first-child {
+ul li.active {
   background-color: #1E40AF;
   box-shadow: 0 2px 4px 0 #1E40AF50;
 }
@@ -117,6 +119,7 @@ ul li:first-child {
 /* Banners Page */
 .banners-container {
   /* background-color: #065F46; */
+  text-align: left;
 }
 
 .banners-container .banner {
@@ -216,4 +219,46 @@ ul li:first-child {
 
 .neutral svg {
   color: #60A5FA;
+}
+
+/* Cards page */
+div.card {
+  margin-inline: auto;
+  background-color: #F9FAFB;
+  width: 384px;
+  height: 212px;
+  border-radius: 8px;
+  text-align: center;
+  padding-inline: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+div.card:hover {
+  /* box-shadow: 0px 4px 25px 0 #0000001A; */
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 25px 0 #ffffff1A;
+}
+
+.card .upload-sign {
+  width: 48px;
+  height: 48px;
+  background-color: #3F75FE;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  margin-inline: auto;
+  box-shadow: 0 4px 6px -2px #0000000D;
+}
+
+.card h3 {
+  color: #111827;
+  font-weight: 600;
+}
+
+.card p {
+  color: #6B7280;
 }

@@ -9,7 +9,7 @@ export default function Banners() {
             />
             <Banner 
                 theme='warning'
-                message='singleline'
+                message='multiline'
             />
             <Banner 
                 theme="error"
