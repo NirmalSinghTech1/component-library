@@ -17,8 +17,8 @@
   height: 80vh;
   /* background-color: #1E40AF; */
   /* width: 100%; */
-  margin: 0 1em;
-  max-width: 100vw;
+  /* margin: 0 1em; */
+  /* max-width: 100vw; */
   width: 100%;
   text-align: center;
 }
@@ -284,24 +284,27 @@ div.card:hover {
   text-align: left;
   padding-block: 40px;
   border-radius: 5px;
-  max-width: 100vw;
+  max-width: 932px;
+  width: 90%;
+  margin-inline: auto;
   box-sizing: border-box;
 }
 
 .testimonial-img-container img {
   position: absolute;
-  left: 40px;
+  left: 30px;
   width: 244px;
   height: 324px;
   object-fit: cover;
   margin-top: -75px;
   border-radius: 12px;
-  box-shadow: 0 10px 10px -5px #0000000A;
+  box-shadow: 0 0px 10px -5px #0000000A;
 }
 
 .testimonial-content {
-  margin-left: 300px;
-  width: 800px;
+  margin-left: 290px;
+  margin-right: 40px;
+  width: 700px;
 }
 
 .testimonial-content > p:first-of-type {
@@ -310,6 +313,132 @@ div.card:hover {
 
 p.name-address {
   margin-top: 24px;
+}
+
+/* Tooltips Page */
+.tooltips-container {
+  display: flex;
+  gap: 0.7em;
+  background-color: gainsboro;
+  border-radius: 10px;
+  padding: 1.5em;
+  position: relative;
+  z-index: -1;
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  width: 384px;
+  height: 98px;
+  padding: 1em;
+  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 44px;
+  filter: drop-shadow(0px 4px 5px #6B728050);
+}
+
+.tooltip-container::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50px;
+  width: 34px;
+  height: 34px;
+  transform: rotate(45deg);
+  background-color: inherit;
+  z-index: -1;
+}
+
+.bold-black.tooltip-container {
+  background-color: #262626;
+  color: #C7C7C7
+}
+
+.bold-black h4,
+.bold-blue h4,
+.bold-pink h4, 
+.bold-green h4 {
+  color: #FFFFFF;
+}
+
+.bold-blue {
+  background-color: #1E40AF;
+}
+
+.bold-pink {
+  background-color: #A9229B;
+}
+
+.bold-green {
+  background-color: #47AA5D;
+}
+
+.light-black {
+  background-color: #FFFFFF;
+  color: #6B7280;
+}
+
+.light-black h4 {
+  color: #111827;
+}
+
+.light-blue {
+  background-color: #E0E7FF;
+  color: #1E40AF;
+}
+
+.light-blue p {
+  color: #1C51B9;
+}
+
+.light-pink {
+  background-color: #FFF3FC;
+  color: #C7369E;
+}
+
+.light-pink h4 {
+  color: #A9229B;
+}
+
+.light-green {
+  background-color: #E7FFF3;
+  color: #3C8C4E;
+}
+
+.light-green h4 {
+  color: #137A2A;
+}
+
+.tooltip-container svg {
+  width: 40px;
+  height: 26px;
+}
+
+.tooltip-container .tooltip-content {
+  margin-left: 12px;
+  margin-right: 16px;
+}
+
+.tooltip-container .tooltip-content h4 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+
+.tooltip-content p {
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.tooltip-container .close-svg {
+  align-self: flex-start;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tooltip-container .close-svg path {
+  stroke-width: 40;
 }
 
 @media (max-width: 470px) {
@@ -402,4 +531,10 @@ p.name-address {
     font-weight: 700;
     font-size: 1rem;
   }
+
+  /* Tooltips Page */
+  .tooltips-container {
+    flex-direction: column;
+  }
+
 }
