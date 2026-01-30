@@ -4,6 +4,7 @@ import Badges from './components/badges/Badges'
 import Banners from './components/banners/Banners'
 import Card from './components/cards/Card'
 import Tooltips from './components/tooltips/Tooltips'
+import Toasts from './components/Toasts/Toasts'
 import TestimonialWithImg from './components/testimonials/TestimonialWithImg'
 import Navigation from './Navigation'
 import Typewriter from './utils/Typewriter'
@@ -20,6 +21,7 @@ function App() {
       {page === 'Cards' && <Card />}
       {page === 'Testimonials' && <TestimonialWithImg />}
       {page === 'Tooltips' && <Tooltips />}
+      {page === 'Toasts' && <Toasts />}
     </main>
   )
 }
